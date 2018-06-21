@@ -1,0 +1,26 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Just a basic game database web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wengkin2967/games-database-app.git"
+  },
+  "keywords": [
+    "games",
+    "database",
+    "app",
+    "wengkin2967",
+    "test"
+  ],
+  "author": "Lee Weng Kin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wengkin2967/games-database-app/issues"
+  },
+  "homepage": "https://github.com/wengkin2967/games-database-app#readme"
+}
