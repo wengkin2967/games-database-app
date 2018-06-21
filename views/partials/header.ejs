@@ -2,7 +2,35 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Games Database</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css">
+        <link rel="stylesheet" href="/stylesheets/app.css">
+        <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.js"></script>
+
     </head>
     <body>
-        
+        <div class="ui inverted huge fixed  menu">
+            <a class=" header huge item" href="/"><i class="fire large icon"></i>Games Database</a>
+            <a class="item" href="/">Home</a>
+            <a class="item" href="/games/new">New Entry</a>
+            <div class="right menu">
+                <div class="ui dropdown item">
+                    Language <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item">English</a>
+                        <a class="item">Russian</a>
+                        <a class="item">Spanish</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui primary button">Sign Up</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $('.ui.dropdown.item')
+                .dropdown()
+            ;
+        </script>

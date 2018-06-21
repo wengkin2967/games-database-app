@@ -1,5 +1,26 @@
 <% include partials/header %>
 
-<h1>THIS IS THE INDEX PAGE</h1>
+<h1>The List</h1>
+<div class="ui items">
+    <% games.forEach(function(game){ %>
+        <div class="item">
+           <div class="image">
+             <img src="<%= game.image %>">
+           </div>
+           <div class="content">
+             <a class="header"><%= game.title %></a>
+             <div class="meta">
+               <span>Posted: <%= game.created %> </span>
+             </div>
+             <div class="description">
+               <p></p>
+             </div>
+             <div class="extra">
+               Released On : <%= game.released %>
+             </div>
+           </div>
+         </div>
+    <% }); %>
+</div>
 
 <% include partials/footer %>
