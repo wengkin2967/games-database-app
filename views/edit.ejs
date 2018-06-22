@@ -1,0 +1,31 @@
+<% include partials/header %>
+<div class="ui text inverted container segment main">
+    <div class="huge header ui">
+        Edit Game Entry
+    </div>
+    <form class="ui form inverted" action="/games/<%= game._id %>?_method=PUT" method="post">
+      <div class="field">
+        <label>Game Title</label>
+        <input type="text" name="game[title]" required placeholder="Title" value ="<%= game.title %>">
+      </div>
+      <div class="field">
+        <label>Image</label>
+        <input type="text" name="game[image]" required placeholder="Image URL" value ="<%= game.image %>">
+      </div>
+      <div class="field">
+        <label>Publisher</label>
+        <input type="text" name="game[publisher]" required placeholder="Publisher Name" value ="<%= game.publisher %>">
+      </div>
+      <div class="field">
+        <label>Description</label>
+        <textarea name="game[body]" required ><%- game.body %></textarea>
+      </div>
+      <div class="field">
+          <label>Release Date</label>
+          <input type="date" name="game[released]" required value ="<%= game.released.toDateString() %>">
+      </div>
+      <button class="ui  button  big" type="submit">Submit</button>
+    </form>
+</div>
+
+<% include partials/footer %>

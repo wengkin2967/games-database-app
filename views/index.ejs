@@ -1,22 +1,31 @@
 <% include partials/header %>
 
-<h1>The List</h1>
-<div class="ui items">
+
+
+<div class="ui items inverted divided segment container main">
+    <h2 class="ui icon header center aligned">
+      <i class="list alternate outline icon"></i>
+      <div class="content" style="color:rgba(255,255,255,.9);">
+        List of Games
+        <div class="sub header" style= "color: rgba(255, 255, 255,.7);">Feel Free to add more Game Entries!</div>
+      </div>
+    </h2>
     <% games.forEach(function(game){ %>
         <div class="item">
-           <div class="image">
+           <div class="ui rounded image medium">
              <img src="<%= game.image %>">
            </div>
-           <div class="content">
-             <a class="header"><%= game.title %></a>
-             <div class="meta">
-               <span>Posted: <%= game.created %> </span>
+           <div class="content ">
+             <a class=" header" href="/games/<%=game._id%>"><%= game.title %></a>
+             <div class=" meta">
+               Released On : <%= game.released.toDateString() %>
+               Publisher: <%= game.publisher %>
              </div>
              <div class="description">
-               <p></p>
+               <p><%- game.body.substring(0,150) %>...<p>
              </div>
              <div class="extra">
-               Released On : <%= game.released %>
+               <span>Posted: <%= game.created %> </span>
              </div>
            </div>
          </div>

@@ -1,0 +1,32 @@
+<% include partials/header %>
+
+
+<div class="ui main text inverted container segment">
+    <div class="ui huge header">
+        <%= game.title %>
+    </div>
+    <div class="ui top attached">
+        <div class="item">
+            <img class="ui centered rounded image" src="<%= game.image %>" alt="">
+            <div class="content">
+                <span><%= game.released.toDateString()%></span>
+                <div></div>
+                <span>Publisher: <%= game.publisher %></span>
+            </div>
+            <div class="description">
+                <%# used to evaluate code, i.e evaluate body as html %>
+                <p><%- game.body %></p>
+                <b></b>
+            </div>
+            <%# needs to be post to override %>
+            <form action="/games/<%= game._id %>?_method=DELETE" method="post">
+                <button class="ui red basic button">Delete</button>
+                <a class="ui orange basic button" href="/games/<%= game._id%>/edit">Edit</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<% include partials/footer %>

@@ -2,6 +2,56 @@ i.large.icon{
     font-size: 30px;
 }
 
-.ui.container.main{
-    margin-top: 15%
+.ui.icon.header{
+    margin-top: 8%;
+}
+
+.ui.container{
+    margin-bottom: 8%;
+    margin-top: 15%;
+}
+
+.ui.button{
+    background:	#004040;
+    color:rgba(255,255,255,.9);
+}
+
+body{
+        background: linear-gradient(#008080,#800000);
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+
+
+.list{
+    color:rgba(255,255,255,.9);
+}
+
+.ui.items>.item>.image>img{
+    border: 1px solid white;
+}
+
+.ui.items>.item>.content *{
+    color: rgb(155, 158, 163);
+    font-size: 14px;
+}
+
+.ui.items>.item>.content>a.header{
+    color:rgba(255,255,255,.9);
+    font-size: 25px!important;
+}
+.ui.items>.item>.content p{
+    color:rgba(255,255,255,.9);
+    font-size: 18px!important;
+}
+
+.ui.menu .ui.dropdown .menu>.item{
+    color:rgba(255,255,255,.9)!important;
+    background-color: rgba(0,0,0,.87)!important;
+}
+
+.ui.dropdown .menu {
+    border:none;
 }
